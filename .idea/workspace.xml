@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1f7e92a-01d3-423c-b3aa-ebc7074478b5" name="Changes" comment="" />
+    <list default="true" id="c1f7e92a-01d3-423c-b3aa-ebc7074478b5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/CrabShrimpFish/src/test/java/CrabShrimpFishPackage/CrabShrimpFishGameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrabShrimpFish/CrabShrimpFish.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CrabShrimpFish/CrabShrimpFish.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrabShrimpFish/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CrabShrimpFish/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="debugging" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -47,20 +52,23 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/CrabShrimpFish/src/main/java/CrabShrimpFishPackage" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\spart\Documents\Dev Folder\CasinoTesting\CrabShrimpFish\src\main\java\CrabShrimpFishPackage" />
+      <recent name="C:\Users\spart\Documents\Dev Folder\CasinoTesting\CrabShrimpFish\src\main\java\DicePackage" />
       <recent name="C:\Users\spart\Documents\Dev Folder\CasinoTesting\src\DicePackage" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="CrabShrimpFishPackage" />
       <recent name="src" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
