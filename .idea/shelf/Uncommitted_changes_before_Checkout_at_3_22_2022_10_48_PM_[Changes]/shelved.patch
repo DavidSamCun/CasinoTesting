@@ -1,0 +1,42 @@
+Index: src/CrabShrimpFishPlayer.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package src;\r\n\r\npublic class CrabShrimpFishPlayer {\r\n\r\n        private String name;\r\n\r\n        private int funds;\r\n\r\n        private boolean win = false;\r\n\r\n        private int[] playerBets;\r\n\r\n        public void CrapShrimpFishPlayer(){\r\n            this.name = \"Player1\";\r\n            this.playerBets = new int[6];\r\n            this.funds = 50000;\r\n        }\r\n\r\n        public void CrapShrimpFishPlayer(String name){\r\n            this.name = name;\r\n            this.playerBets = new int[6];\r\n            this.funds = 50000;\r\n        }\r\n\r\n        public int[] setPlayerBet(int index, int funds){\r\n            playerBets[index] = funds;\r\n\r\n            return playerBets;\r\n        }\r\n\r\n        public int getPlayerBet(int index){\r\n            return playerBets[index];\r\n        }\r\n\r\n        public int[] getPlayerBet2(){\r\n            return playerBets;\r\n        }\r\n\r\n        public int getFunds(){\r\n            return funds;\r\n        }\r\n\r\n        public int getWinnings(int winningFunds){\r\n            funds += winningFunds;\r\n            return funds;\r\n        }\r\n\r\n\r\n\r\n\r\n}\r\n
+===================================================================
+diff --git a/src/CrabShrimpFishPlayer.java b/src/CrabShrimpFishPlayer.java
+--- a/src/CrabShrimpFishPlayer.java	
++++ b/src/CrabShrimpFishPlayer.java	
+@@ -2,22 +2,20 @@
+ 
+ public class CrabShrimpFishPlayer {
+ 
+-        private String name;
+-
+-        private int funds;
++    private String name;
++    private int funds;
+ 
+-        private boolean win = false;
+-
+-        private int[] playerBets;
++    private boolean win = false;
++    private int[] playerBets;
+ 
+-        public void CrapShrimpFishPlayer(){
+-            this.name = "Player1";
+-            this.playerBets = new int[6];
+-            this.funds = 50000;
+-        }
++    public void CrapShrimpFishPlayer(){
++        this.name = "Player1";
++        this.playerBets = new int[6];
++        this.funds = 50000;
++    }
+ 
+-        public void CrapShrimpFishPlayer(String name){
+-            this.name = name;
++    public void CrapShrimpFishPlayer(String name){
++        this.name = name;
+             this.playerBets = new int[6];
+             this.funds = 50000;
+         }
