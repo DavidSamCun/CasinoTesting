@@ -4,10 +4,10 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class CrabShrimpFishGameTest {
+class CrapShrimpFishPlayerTest {
 
     @Test
-    public void createGameTest(){
+    public void createPlayerTest(){
 
         //Given
 
@@ -18,7 +18,7 @@ class CrabShrimpFishGameTest {
     }
 
     @Test
-    public void rollDiceTest(){
+    public void setPlayerNameTest(){
 
         //Given
 
@@ -29,7 +29,7 @@ class CrabShrimpFishGameTest {
     }
 
     @Test
-    public void checkWinTest(){
+    public void getPlayerNameTest(){
 
         //Given
 
@@ -40,7 +40,28 @@ class CrabShrimpFishGameTest {
     }
 
     @Test
-    public void resetTest(){
+    public void getPlayerFundsTest(){
+
+        //Given
+
+        //When
+
+        //Then
+
+    }
+
+    @Test
+    public void setPlayerBets(){
+
+        //Given
+
+        //When
+
+        //Then
+
+    }
+
+    public void getPlayerBets(){
 
         //Given
 
