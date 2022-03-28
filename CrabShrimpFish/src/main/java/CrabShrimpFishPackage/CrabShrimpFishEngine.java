@@ -2,6 +2,7 @@ package CrabShrimpFishPackage;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class CrabShrimpFishEngine {
@@ -44,9 +45,22 @@ public class CrabShrimpFishEngine {
             game.rollDice();
             game.cashOut(playerList.get(0));
 
-            System.out.println("Play again?");
 
 
+            while(true) {
+                System.out.println("Play again? yes or no");
+                playerChoice = in.nextLine();
+                if (playerChoice.toLowerCase(Locale.ROOT).equals("yes")) {
+                    game.bins.clearBin();
+                    break;
+                } else if (playerChoice.toLowerCase(Locale.ROOT).equals("no")){
+                    endGame();
+                    break;
+                } else {
+                    System.out.println("Invalid entry");
+                }
+
+            }
         }
 
     }
