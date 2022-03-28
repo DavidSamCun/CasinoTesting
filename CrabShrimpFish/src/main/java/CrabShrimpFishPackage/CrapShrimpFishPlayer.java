@@ -45,7 +45,7 @@ public class CrapShrimpFishPlayer{
 
     public boolean setPlayerBet(int index, int bet){
         if(index > 0 && index < 7 && betFunds(bet)) {
-            playerBet[index] = bet;
+            playerBet[index] += bet;
             return true;
         }
         else {
@@ -78,6 +78,9 @@ public class CrapShrimpFishPlayer{
         return funds;
     }
 
+    public void addWinnings(int winnings){
+        funds += winnings;
+    }
 
 //    public void getWinnings(int winningFunds){
 //        funds += winningFunds;

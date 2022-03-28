@@ -45,13 +45,17 @@ class CrabShrimpFishEngineTest {
         CrabShrimpFishEngine test = new CrabShrimpFishEngine();
         test.newGame();
 
-
+        assertTrue(test.game instanceof CrabShrimpFishGame);
 
     }
 
     @Test
     public void startGameTest(){
 
+        CrabShrimpFishEngine test = new CrabShrimpFishEngine();
+        test.startGame();
+
+        assertFalse(test.gameOver);
 
     }
 
@@ -76,14 +80,14 @@ class CrabShrimpFishEngineTest {
 
     }
 
-    @Test
-    public void playAgainTest(){
-
-    }
 
     @Test
     public void endGameTest(){
+        CrabShrimpFishEngine test = new CrabShrimpFishEngine();
+        test.startGame();
+        test.endGame();
 
+        assertTrue(test.gameOver);
     }
 
 }

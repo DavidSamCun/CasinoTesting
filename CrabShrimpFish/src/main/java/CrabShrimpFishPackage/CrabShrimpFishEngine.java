@@ -6,9 +6,11 @@ import java.util.Scanner;
 
 public class CrabShrimpFishEngine {
 
+    Scanner in = new Scanner(System.in);
     List<CrapShrimpFishPlayer> playerList = new ArrayList<>();
-    private CrabShrimpFishGame game;
-
+    CrabShrimpFishGame game;
+    Boolean gameOver;
+    String playerChoice;
 
     public CrapShrimpFishPlayer addPlayer(String name, int funds){
         return new CrapShrimpFishPlayer(name, funds);
@@ -20,7 +22,46 @@ public class CrabShrimpFishEngine {
     }
 
 
+    public void startGame() {
+        this.gameOver = false;
+    }
 
+
+    public void endGame() {
+        this.gameOver = true;
+    }
+
+
+
+    public void playGame(){
+        newGame();
+        playerList.add(addPlayer("John", 50000));
+        startGame();
+
+        while(!gameOver){
+
+            betPhase(playerList.get(0));
+            game.rollDice();
+            game.cashOut(playerList.get(0));
+
+            System.out.println("Play again?");
+
+
+        }
+
+    }
+
+    public void betPhase(CrapShrimpFishPlayer player){
+        System.out.println("Please place your bets (from 1 to 6)");
+        int playerBet = 0;
+        for(int i = 1; i < 7; i++) {
+            playerBet = in.nextInt();
+            System.out.println("Roll " + i + " bet is " + playerBet);
+            player.setPlayerBet(i, playerBet);
+        }
+    }
+
+    //public void
 
 }
 

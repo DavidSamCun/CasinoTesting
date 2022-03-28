@@ -160,6 +160,7 @@ class CrapShrimpFishPlayerTest {
 
         //Then
         assertEquals(betAmnt, actual);
+        assertEquals(gambler1.getFunds(), 4500);
 
 
     }

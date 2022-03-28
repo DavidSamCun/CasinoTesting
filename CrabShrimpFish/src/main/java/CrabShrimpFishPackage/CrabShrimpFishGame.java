@@ -57,6 +57,19 @@ public class CrabShrimpFishGame {
         }
     }
 
+    public void cashOut(CrapShrimpFishPlayer player){
+        int winnings = 0;
+        for(int i = 1; i < 7; i++) {
+            if (player.getPlayerBet2()[i] > 0 || roll.getDiceBin().getRollAmount(i) > 0);{
+                winnings = player.getPlayerBet2()[i]*roll.getDiceBin().getRollAmount(i);
+
+                System.out.println("Congrats! You bet " + player.getPlayerBet2()[i] + " on " + i +
+                        ", which appeared " + roll.getDiceBin().getRollAmount(i) + " times!\n You won " + winnings);
+
+                player.addWinnings(winnings);
+            }
+        }
+    }
 
 
 }
