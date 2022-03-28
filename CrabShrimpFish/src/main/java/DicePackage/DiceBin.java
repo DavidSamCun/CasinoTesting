@@ -1,5 +1,7 @@
 package DicePackage;
 
+import java.util.Arrays;
+
 public class DiceBin {
 
 
@@ -25,6 +27,10 @@ public class DiceBin {
 
     public int getRollAmount(int roll){
         return bin[roll];
+    }
+
+    public void clearBin(){
+        Arrays.fill(bin, 0);
     }
 
 }

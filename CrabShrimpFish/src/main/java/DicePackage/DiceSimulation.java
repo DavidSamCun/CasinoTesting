@@ -18,11 +18,20 @@ public class DiceSimulation {
         this.tries = amountOfTries;
     }
 
+    public Dice getDice(){
+        return this.dice;
+    }
+
+    public DiceBin getDiceBin(){
+        return this.bin;
+    }
+
     public void runSimulation(){
         for(int i = 0; i<tries; i++){
             this.bin.incremintBin(dice.tossAndSum());
         }
     }
+
 
 /*    public void result2(){
 

@@ -65,10 +65,9 @@ public class CrapShrimpFishPlayer{
         }
     }
 
-    public int getPlayerBet(int index){
-        return playerBet[index];
-    }
-
+//    public int getPlayerBet(int index){
+//        return playerBet[index];
+//    }
 
     public int[] getPlayerBet2(){
         return playerBet;
@@ -80,9 +79,9 @@ public class CrapShrimpFishPlayer{
     }
 
 
-    public void getWinnings(int winningFunds){
-        funds += winningFunds;
-    }
+//    public void getWinnings(int winningFunds){
+//        funds += winningFunds;
+//    }
 
 
 }
